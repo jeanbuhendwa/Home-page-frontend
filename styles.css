@@ -7,20 +7,25 @@
     font-size: 15px;
 }
 hr{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .header-container {
-   margin: 0px 120px;
+   margin: 0px 60px;
    background-color: white;
-   padding: 20px;
+   /* padding: 20px; */
 }
 
 .header-container #header-navigation {
-    padding: 50px 0px;
+    padding: 40px 0px;
 }
 .header-container #header-navigation #header-logo {
     float: left;
+}
+.header-container #header-navigation #header-logo img{
+    width: 40px;
+    height: 25px;
+    padding: 5px 10px;
 }
 
 .header-container #header-navigation ul {
@@ -29,13 +34,13 @@ hr{
 }
 .header-container #header-navigation ul li {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 .header-container #header-navigation ul li a {
     text-decoration: none;
     color: gray;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: capitalize;
     transition: color 0.8s;
@@ -44,47 +49,47 @@ hr{
     color:hsl(5, 85%, 63%);
 }
 .main-container {
-    margin: 0px 120px;
+    margin: 0px 60px;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px;
  }
  .main-container .branding-section{
     display: flex;
-    gap: 20px;
+    gap: 10px;
  }
  .main-container .branding-section .main-brand{
     flex-grow: 2;
-    flex-shrink: 3;
+    flex-shrink: 2.2;
     display: flex;
     flex-direction: column;
  }
  .main-container .branding-section .main-brand .brand-image img{
     width: 100%;
-    height: 20em;
+    height: 15em;
  }
  .main-container .branding-section .main-brand .brand-text{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 10px 0px;
  }
  .main-container .branding-section .main-brand .brand-text h1{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 45px;
+    font-size: 2rem;
     flex-shrink: 0.8;
     padding: 20px 0px;
  }
  .main-container .branding-section .main-brand .brand-text .text-side-brand p{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 12px;
     color: gray;
-    padding: 20px 0px;
+    padding: 20px 10px 20px 0px;
     text-align: start;
  }
  .main-container .branding-section .main-brand .brand-text .text-side-brand button{
     background-color: hsl(5, 85%, 63%);
-    padding: 12px 25px;
-    font-size: 1rem;
+    padding: 8px 15px;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     color: white;
     border: none;
@@ -103,13 +108,13 @@ hr{
  }
  .main-container .branding-section .side-section h2{
     color: hsl(35, 77%, 62%);
-    font-size: 2.4rem;
-    padding: 20px 10px;
-    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    font-weight: 600;
  }
  .main-container .branding-section .side-section h4{
     color: white;
-    font-size: 1.4rem;
+    font-size: 0.7rem;
     padding: 10px;
     font-weight: 600;
     transition: color 0.8s;
@@ -120,32 +125,31 @@ hr{
  }
  .main-container .branding-section .side-section p{
     color: gray;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 200;
     padding: 0px 10px 10px;
  }
 
 .main-container .side-articles {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 30px 0px;
 }
 .main-container .side-articles .article-img img{
-    width: 100px;
-    height: 150px;
+    width: 50px;
+    height: 70px;
 }
 .main-container .side-articles .article-text h2{
-    font-size: 30px;
-    padding: 10px 0px;
+    font-size: 1.2rem;
     color: gray;
+    padding: 0px;
     font-weight: 600;
     letter-spacing: 2px;
 }
 .main-container .side-articles .article-text h4{
-    font-size: 15px;
-    padding: 10px 0px;
+    font-size: 0.7rem;
+    padding: 5px 0px;
     font-weight: 600;
-    letter-spacing: 1px;
     transition: color 0.8s;
 }
 .main-container .side-articles .article-text h4:hover{
@@ -155,5 +159,7 @@ hr{
 .main-container .side-articles .article-text p{
     font-weight: 400;
     color: gray;
-    line-height: 1.8rem;
+    font-size: 0.5rem;
+    letter-spacing: 2;
+    line-height: 0.8rem;
 }
