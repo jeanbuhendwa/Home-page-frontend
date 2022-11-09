@@ -5,10 +5,13 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
+    box-sizing: border-box;
 }
 hr{
     margin: 10px 0px;
 }
+
+/* Styling the navigation header using flexbox */
 
 .header-container {
    margin: 0px 100px;
@@ -16,24 +19,21 @@ hr{
 }
 
 .header-container #header-navigation {
-    padding: 40px 0px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
 }
-.header-container #header-navigation #header-logo {
-    float: left;
-}
-.header-container #header-navigation #header-logo img{
-    width: 40px;
-    height: 25px;
-    padding: 5px 10px;
+.header-container #header-navigation .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-container #header-navigation ul {
-    float: right;
     list-style: none;
-}
-.header-container #header-navigation ul li {
-    display: inline-block;
-    padding: 5px 10px;
 }
 .header-container #header-navigation ul li a {
     text-decoration: none;
@@ -47,6 +47,23 @@ hr{
 .header-container #header-navigation ul li a:hover {
     color:hsl(5, 85%, 63%);
 }
+
+.header-container #header-navigation .hamburger {
+    display: none;
+    cursor: pointer;
+}
+.header-container #header-navigation .hamburger .bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 5px 0px;
+    background-color: black;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-radius: 3px;
+}
+
+/* Styling the main contaier using flexbox */
 .main-container {
     margin: 10px 100px;
     background-color: white;
@@ -198,11 +215,41 @@ hr{
         margin: 0px 20px;
      }
     .header-container #header-navigation #header-logo img{
-        width: 30px;
-        height: 20px;
+        width: 50px;
+        height: 30px;
     }
     .header-container #header-navigation ul li a {
-        font-size: 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .header-container #header-navigation .hamburger {
+        display: block;
+    }
+    .header-container #header-navigation .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .header-container #header-navigation .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .header-container #header-navigation .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header-container #header-navigation .nav-menu {
+        position: fixed;
+        right: -100%;
+        gap: 0;
+        top: 100px;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .header-container #header-navigation .nav-menu .nav-item{
+        margin: 16px 0px;
+    }
+    .header-container #header-navigation .nav-menu.active {
+        right: 0;
     }
     .main-container {
         margin: 10px 20px;
